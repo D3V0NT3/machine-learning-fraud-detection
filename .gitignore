@@ -1,0 +1,20 @@
+# R project files
+.Rhistory
+.RData
+.Ruserdata
+
+# Large/raw datasets
+*.csv
+*.xlsx
+*.zip
+
+# Temporary files
+*.tmp
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# RStudio
+.Rproj.user/

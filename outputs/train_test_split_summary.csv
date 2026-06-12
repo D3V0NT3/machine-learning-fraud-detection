@@ -1,0 +1,4 @@
+"Dataset","Rows","Fraud_Percent","NonFraud_Percent"
+"Full Dataset",24192,33.95,66.05
+"Training Set",16936,33.95,66.05
+"Testing Set",7256,33.94,66.06

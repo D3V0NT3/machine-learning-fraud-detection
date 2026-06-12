@@ -1,0 +1,60 @@
+Random Forest Model
+===================
+
+Model Summary:
+Random Forest 
+
+16936 samples
+   10 predictor
+    2 classes: 'Fraud', 'NonFraud' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 15242, 15243, 15243, 15242, 15242, 15243, ... 
+Resampling results across tuning parameters:
+
+  mtry  ROC        Sens       Spec     
+   2    0.9968728  0.9681739  0.9831034
+   5    0.9980795  0.9779130  0.9883780
+   8    0.9982897  0.9787826  0.9876626
+  11    0.9982265  0.9775652  0.9865897
+  14    0.9977411  0.9763478  0.9864111
+
+ROC was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 8.
+
+Best Tuning Parameters:
+  mtry
+3    8
+
+Confusion Matrix:
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Fraud NonFraud
+  Fraud     2406       52
+  NonFraud    57     4741
+                                          
+               Accuracy : 0.985           
+                 95% CI : (0.9819, 0.9876)
+    No Information Rate : 0.6606          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9665          
+                                          
+ Mcnemar's Test P-Value : 0.7016          
+                                          
+            Sensitivity : 0.9769          
+            Specificity : 0.9892          
+         Pos Pred Value : 0.9788          
+         Neg Pred Value : 0.9881          
+             Prevalence : 0.3394          
+         Detection Rate : 0.3316          
+   Detection Prevalence : 0.3388          
+      Balanced Accuracy : 0.9830          
+                                          
+       'Positive' Class : Fraud           
+                                          
+
+AUC:
+Area under the curve: 0.9984

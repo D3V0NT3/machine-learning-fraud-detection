@@ -1,0 +1,10 @@
+"type","isFraud","Count","Percentage"
+"CASH_IN","NonFraud",3481,100
+"CASH_OUT","NonFraud",5640,57.88
+"CASH_OUT","Fraud",4104,42.12
+"DEBIT","NonFraud",111,100
+"PAYMENT","NonFraud",5410,100
+"TRANSFER","NonFraud",1303,24.18
+"TRANSFER","Fraud",4085,75.82
+NA,"NonFraud",34,58.62
+NA,"Fraud",24,41.38

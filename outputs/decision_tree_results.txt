@@ -1,0 +1,65 @@
+Decision Tree Model
+===================
+
+Model Summary:
+CART 
+
+16936 samples
+   10 predictor
+    2 classes: 'Fraud', 'NonFraud' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 15242, 15243, 15243, 15242, 15242, 15243, ... 
+Resampling results across tuning parameters:
+
+  cp           ROC        Sens       Spec     
+  0.002608696  0.9882133  0.9573913  0.9701418
+  0.002869565  0.9881661  0.9572174  0.9688904
+  0.003443478  0.9854225  0.9528696  0.9682649
+  0.004695652  0.9716089  0.9189565  0.9673710
+  0.007000000  0.9581142  0.8961739  0.9694258
+  0.008608696  0.9459976  0.8801739  0.9670127
+  0.016000000  0.9396579  0.8826087  0.9527968
+  0.019304348  0.9254710  0.9041739  0.9201692
+  0.030956522  0.8940323  0.8940870  0.8912041
+  0.654260870  0.6871199  0.4323478  0.9418920
+
+ROC was used to select the optimal model using the largest value.
+The final value used for the model was cp = 0.002608696.
+
+Best Tuning Parameters:
+           cp
+1 0.002608696
+
+Confusion Matrix:
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Fraud NonFraud
+  Fraud     2345      154
+  NonFraud   118     4639
+                                          
+               Accuracy : 0.9625          
+                 95% CI : (0.9579, 0.9668)
+    No Information Rate : 0.6606          
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.9167          
+                                          
+ Mcnemar's Test P-Value : 0.03382         
+                                          
+            Sensitivity : 0.9521          
+            Specificity : 0.9679          
+         Pos Pred Value : 0.9384          
+         Neg Pred Value : 0.9752          
+             Prevalence : 0.3394          
+         Detection Rate : 0.3232          
+   Detection Prevalence : 0.3444          
+      Balanced Accuracy : 0.9600          
+                                          
+       'Positive' Class : Fraud           
+                                          
+
+AUC:
+Area under the curve: 0.9861

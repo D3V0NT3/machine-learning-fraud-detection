@@ -1,20 +1,22 @@
-# R project files
+# R and RStudio files
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user/
+*.Rproj
 
-# Large/raw datasets
-*.csv
-*.xlsx
-*.zip
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Temporary files
 *.tmp
 *.log
 
-# System files
-.DS_Store
-Thumbs.db
+# Large generated processed datasets
+outputs/data_clean_after_imputation.csv
+outputs/data_model_feature_engineered.csv
 
-# RStudio
-.Rproj.user/
+# Optional: uncomment below if the dataset must not be tracked publicly
+# data/*.csv

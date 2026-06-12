@@ -1,0 +1,59 @@
+Naive Bayes Model
+=================
+
+Model Summary:
+Naive Bayes 
+
+16936 samples
+   10 predictor
+    2 classes: 'Fraud', 'NonFraud' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 15242, 15243, 15243, 15242, 15242, 15243, ... 
+Resampling results across tuning parameters:
+
+  usekernel  ROC        Sens       Spec     
+  FALSE            NaN        NaN        NaN
+   TRUE      0.9205562  0.2523478  0.9927589
+
+Tuning parameter 'fL' was held constant at a value of 0
+Tuning parameter 'adjust' was held constant at a value of 1
+ROC was used to select the optimal model using the largest value.
+The final values used for the model were fL = 0, usekernel = TRUE and adjust = 1.
+
+Best Tuning Parameters:
+  fL usekernel adjust
+2  0      TRUE      1
+
+Confusion Matrix:
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Fraud NonFraud
+  Fraud      591       33
+  NonFraud  1872     4760
+                                          
+               Accuracy : 0.7375          
+                 95% CI : (0.7272, 0.7476)
+    No Information Rate : 0.6606          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.2847          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.23995         
+            Specificity : 0.99311         
+         Pos Pred Value : 0.94712         
+         Neg Pred Value : 0.71773         
+             Prevalence : 0.33944         
+         Detection Rate : 0.08145         
+   Detection Prevalence : 0.08600         
+      Balanced Accuracy : 0.61653         
+                                          
+       'Positive' Class : Fraud           
+                                          
+
+AUC:
+Area under the curve: 0.9182

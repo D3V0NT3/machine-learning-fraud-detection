@@ -1,0 +1,61 @@
+K-Nearest Neighbours Model
+==========================
+
+Model Summary:
+k-Nearest Neighbors 
+
+16936 samples
+   10 predictor
+    2 classes: 'Fraud', 'NonFraud' 
+
+Pre-processing: centered (14), scaled (14) 
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 15242, 15243, 15243, 15242, 15242, 15243, ... 
+Resampling results across tuning parameters:
+
+  k   ROC        Sens       Spec     
+   3  0.9620815  0.8935652  0.9624526
+   5  0.9693968  0.8840000  0.9676371
+   7  0.9724899  0.8782609  0.9685310
+   9  0.9739119  0.8730435  0.9687993
+  11  0.9754852  0.8688696  0.9684418
+  15  0.9763535  0.8622609  0.9658494
+
+ROC was used to select the optimal model using the largest value.
+The final value used for the model was k = 15.
+
+Best K:
+   k
+6 15
+
+Confusion Matrix:
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Fraud NonFraud
+  Fraud     2151      151
+  NonFraud   312     4642
+                                          
+               Accuracy : 0.9362          
+                 95% CI : (0.9303, 0.9417)
+    No Information Rate : 0.6606          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8554          
+                                          
+ Mcnemar's Test P-Value : 1.039e-13       
+                                          
+            Sensitivity : 0.8733          
+            Specificity : 0.9685          
+         Pos Pred Value : 0.9344          
+         Neg Pred Value : 0.9370          
+             Prevalence : 0.3394          
+         Detection Rate : 0.2964          
+   Detection Prevalence : 0.3173          
+      Balanced Accuracy : 0.9209          
+                                          
+       'Positive' Class : Fraud           
+                                          
+
+AUC:
+Area under the curve: 0.9832

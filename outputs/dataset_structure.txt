@@ -1,0 +1,54 @@
+Dataset dimensions:
+[1] 24192    11
+
+Column names:
+ [1] "step"            "type"            "amount"          "Amount.Category" "nameOrig"        "oldbalanceOrg"  
+ [7] "newbalanceOrig"  "nameDest"        "oldbalanceDest"  "newbalanceDest"  "isFraud"        
+
+Structure:
+'data.frame':	24192 obs. of  11 variables:
+ $ step           : int  544 407 383 182 567 44 374 179 326 348 ...
+ $ type           : chr  "TRANSFER" "CASH_OUT" "TRANSFER" "CASH_OUT" ...
+ $ amount         : num  179998 40627 NA 45445 122817 ...
+ $ Amount.Category: chr  "Medium" "Medium" NA "Medium" ...
+ $ nameOrig       : chr  "C1298652940" "C409120323" "C1497139417" "C436225964" ...
+ $ oldbalanceOrg  : num  179998 0 4731372 11871 122817 ...
+ $ newbalanceOrig : num  0 0 0 0 0 ...
+ $ nameDest       : chr  "C2071037920" "C986661459" "C1561724492" "C832647858" ...
+ $ oldbalanceDest : num  -17824680 283354 0 0 0 ...
+ $ newbalanceDest : num  0 323981 0 45445 0 ...
+ $ isFraud        : int  1 0 1 0 1 0 0 0 1 0 ...
+
+First six rows:
+  step     type    amount Amount.Category    nameOrig oldbalanceOrg newbalanceOrig    nameDest oldbalanceDest
+1  544 TRANSFER 179997.78          Medium C1298652940      179997.8            0.0 C2071037920    -17824680.1
+2  407 CASH_OUT  40626.73          Medium  C409120323           0.0            0.0  C986661459       283354.2
+3  383 TRANSFER        NA            <NA> C1497139417     4731371.9            0.0 C1561724492            0.0
+4  182 CASH_OUT  45445.04          Medium  C436225964       11871.0            0.0  C832647858            0.0
+5  567 TRANSFER 122816.67          Medium C1014449898      122816.7            0.0 C1843501227            0.0
+6   44  PAYMENT   1513.11             Low  C777685769      140848.3       139335.2  M328038754            0.0
+  newbalanceDest isFraud
+1           0.00       1
+2      323980.96       0
+3           0.00       1
+4       45445.04       0
+5           0.00       1
+6           0.00       0
+
+Summary statistics:
+      step           type               amount         Amount.Category      nameOrig         oldbalanceOrg      
+ Min.   :  1.0   Length:24192       Min.   :       0   Length:24192       Length:24192       Min.   :-18038420  
+ 1st Qu.:159.0   Class :character   1st Qu.:   24426   Class :character   Class :character   1st Qu.:      520  
+ Median :270.0   Mode  :character   Median :  135845   Mode  :character   Mode  :character   Median :    57610  
+ Mean   :285.9                      Mean   :  662702                                         Mean   :  1109888  
+ 3rd Qu.:382.0                      3rd Qu.:  367208                                         3rd Qu.:   503417  
+ Max.   :743.0                      Max.   :33785599                                         Max.   : 59585040  
+                                    NA's   :1210                                             NA's   :1210       
+ newbalanceOrig        nameDest         oldbalanceDest      newbalanceDest         isFraud      
+ Min.   :-15620566   Length:24192       Min.   :-17824680   Min.   :-20309075   Min.   :0.0000  
+ 1st Qu.:        0   Class :character   1st Qu.:        0   1st Qu.:        0   1st Qu.:0.0000  
+ Median :        0   Mode  :character   Median :        0   Median :   156735   Median :0.0000  
+ Mean   :   629474                      Mean   :   891184   Mean   :  1227064   Mean   :0.3395  
+ 3rd Qu.:    20545                      3rd Qu.:   656062   3rd Qu.:  1098322   3rd Qu.:1.0000  
+ Max.   : 49585040                      Max.   :236230517   Max.   :236726495   Max.   :1.0000  
+ NA's   :1210                           NA's   :1210        NA's   :1210                        

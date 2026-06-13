@@ -94,9 +94,7 @@ The script will generate updated output tables in `outputs/` and updated charts 
 - `plots/fig_8_random_forest_importance.png` — Random Forest variable importance plot
 - `plots/fig_9_roc_comparison.png` — ROC curve comparison for all models
 
-## Academic note
 
-This repository is intended for coursework organisation and portfolio presentation. If this project is still awaiting marking, keep the GitHub repository private until after the university submission and marking process is complete.
 
 ## Author
 
